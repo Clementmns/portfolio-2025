@@ -7,8 +7,10 @@ import SkillsCard from "@/components/cards/skills/skills";
 import HiringCard from "@/components/cards/hiring/hiring";
 import ToolsCard from "@/components/cards/tools";
 import ProjectsCard from "@/components/cards/projects";
-// import FunCard from "@/components/cards/music"; // TODO: Create FunCard component
 import { Metadata } from "next";
+import { Snowfall } from "react-snowfall";
+import { getCurrentSeason } from "@/lib/current-season";
+import SnowfallLayout from "@/components/layouts/snowfall";
 
 export async function generateMetadata({
   params,
@@ -94,7 +96,8 @@ export async function generateMetadata({
 
 export default function HomePage() {
   return (
-    <div className="container mx-auto max-w-7xl px-4 py-22 flex flex-col items-center gap-10">
+    <div className="container min-h-screen mx-auto max-w-7xl px-4 py-22 flex flex-col items-center gap-10">
+      <SnowfallLayout/>
       <HeroSection />
 
       <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4">

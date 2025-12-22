@@ -16,6 +16,7 @@ import StructuredData from "@/components/seo/structured-data";
 import DynamicFavicon from "@/components/seo/dynamic-favicon";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import { Snowfall } from "react-snowfall";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
