@@ -12,12 +12,11 @@ import { fontClassMap } from "@/lib/fonts";
 
 export function FontSelect() {
   const t = useTranslations("Header");
-  let font: Font = "ibmPlexSans";
+  let font: Font = "spaceGrotesk";
   if (typeof document !== "undefined") {
     const match = document.cookie.match(/(?:^|; )user-font=([^;]*)/);
     const cookieFont = match?.[1] as Font | undefined;
     if (
-      cookieFont === "ibmPlexSans" ||
       cookieFont === "spaceGrotesk" ||
       cookieFont === "geist" ||
       cookieFont === "noto" ||
@@ -33,12 +32,6 @@ export function FontSelect() {
         <SelectValue placeholder={t("formFontPlaceholder")} />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem
-          value="ibmPlexSans"
-          className={`${fontClassMap["ibmPlexSans"]} antialiased`}
-        >
-          {t("formFontOptionIBMPlexSans")}
-        </SelectItem>
         <SelectItem
           value="spaceGrotesk"
           className={`${fontClassMap["spaceGrotesk"]} antialiased`}
