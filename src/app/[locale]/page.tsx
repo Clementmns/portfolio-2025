@@ -8,8 +8,6 @@ import HiringCard from "@/components/cards/hiring/hiring";
 import ToolsCard from "@/components/cards/tools";
 import ProjectsCard from "@/components/cards/projects";
 import { Metadata } from "next";
-import { Snowfall } from "react-snowfall";
-import { getCurrentSeason } from "@/lib/current-season";
 import SnowfallLayout from "@/components/layouts/snowfall";
 
 export async function generateMetadata({
@@ -96,7 +94,7 @@ export async function generateMetadata({
 
 export default function HomePage() {
   return (
-    <div className="container min-h-screen mx-auto max-w-7xl px-4 py-22 flex flex-col items-center gap-10">
+    <div className="container min-h-screen mx-auto max-w-4xl px-4 py-22 flex flex-col items-center gap-10">
       <SnowfallLayout/>
       <HeroSection />
 

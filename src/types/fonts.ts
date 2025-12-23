@@ -1,5 +1,5 @@
-export type Font = "spaceGrotesk" | "geist" | "openDyslexic" | "noto";
+export type Font = "ibmPlexSans" | "spaceGrotesk" | "geist" | "openDyslexic" | "noto";
 
-export const Fonts: Font[] = ["spaceGrotesk", "geist", "openDyslexic", "noto"];
+export const Fonts: Font[] = ["ibmPlexSans", "spaceGrotesk", "geist", "openDyslexic", "noto"];
 
-export const fallbackFont: Font = "spaceGrotesk";
+export const fallbackFont: Font = "ibmPlexSans";

@@ -1,4 +1,4 @@
-import { Geist, Noto_Sans, Space_Grotesk } from "next/font/google";
+import { Geist, Noto_Sans, Space_Grotesk, IBM_Plex_Sans} from "next/font/google";
 import localFont from "next/font/local";
 import { Font } from "@/types/fonts";
 
@@ -11,6 +11,10 @@ export const geist = Geist({
 });
 
 export const noto = Noto_Sans({
+  subsets: ["latin"],
+});
+
+export const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
 });
 
@@ -40,6 +44,7 @@ export const openDyslexic = localFont({
 });
 
 export const fontClassMap: Record<Font, string> = {
+  ibmPlexSans: ibmPlexSans.className,
   spaceGrotesk: spaceGrotesk.className,
   geist: geist.className,
   openDyslexic: openDyslexic.className,
