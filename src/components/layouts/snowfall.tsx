@@ -8,5 +8,9 @@ export default async function SnowfallLayout() {
     return null;
   }
 
-  return <SnowfallOverlay />;
+  return (
+    <div className="portrait:hidden">
+      <SnowfallOverlay />
+    </div>
+  );
 }
